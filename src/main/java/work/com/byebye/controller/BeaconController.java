@@ -1,0 +1,68 @@
+package work.com.byebye.controller;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.apache.log4j.Logger;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import work.com.byebye.dto.BeaconDto;
+import work.com.byebye.service.BeaconService;
+
+@Controller
+public class BeaconController {
+     
+    private Logger logger = Logger.getLogger(BeaconController.class);
+     
+    @Resource(name="beaconService")
+    private BeaconService beaconService;
+     
+    @RequestMapping(value = "list.do")
+    public ModelAndView getBoardList() {
+        List<BeaconDto> list = beaconService.getBeaconList();
+        ModelAndView mv = new ModelAndView("beacon/list");
+        mv.addObject("list", list);
+        System.out.println(list);
+        //mv.setViewName("beacon/list"); 
+        
+        logger.debug("list: " + list);
+        return mv;
+    }
+    
+    @RequestMapping(value = "listResult.do", method=RequestMethod.GET)
+	public ModelAndView getResult(String mac) {
+    	System.out.println(mac);
+		
+		JSONParser parser = new JSONParser();
+		ArrayList<String> macList = new ArrayList<String>();
+		try {
+			JSONObject obj = (JSONObject) parser.parse(mac);
+			JSONArray array = (JSONArray) obj.get("mac");
+			Iterator<String> iterator = array.iterator();
+			while(iterator.hasNext()){
+				macList.add(iterator.next());
+			}
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(macList);
+		List<BeaconDto> list = beaconService.getBeaconResult(macList);
+		ModelAndView mv = new ModelAndView("beacon/list");
+        mv.addObject("list", list);
+        
+        logger.debug("list: " + list);
+        return mv;
+    }
+}
+
