@@ -31,8 +31,8 @@
 
 #overlay {
    position: absolute;
-   left: 49%;
-   top: 46%;
+   left: 48.5%;
+   top: 24%;
    background: rgba(255, 255, 255, 0);
    z-index: 999;
 }
@@ -294,9 +294,9 @@
 							placeholder="지도를 움직이면 화살표 속 주소가 입력됩니다." readonly>
 					</div>
 					<div id="map" style="width: 100%; height: 300px;">
-						<div id="overlay" style="margin: 0;">
-							<span style="font-size: 200%;color:red;">↖</span>
-						</div>
+						<!-- <div id="overlay" style="margin: 0;"> -->
+							<span id="overlay" style="font-size: 200%;color:red;"><img src="img/locationIcon.png"/></span>
+						<!-- </div> -->
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -448,10 +448,16 @@
 					function displayMarker(place) {
 
 						// 마커를 생성하고 지도에 표시합니다
+						var imageSrc = 'img/locationIcon.png',
+							imageSize = new daum.maps.Size(40, 70),
+							imageOption = {offset: new daum.maps.Point(27, 69)};
+						var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption);
+						
 						var marker = new daum.maps.Marker({
 							map : map,
 							position : new daum.maps.LatLng(place.latitude,
-									place.longitude)
+									place.longitude),
+							image: markerImage
 						});
 
 						// 마커에 클릭이벤트를 등록합니다
