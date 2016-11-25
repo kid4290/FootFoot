@@ -57,9 +57,8 @@ public class BoardController {
 	private String BoardDtoPath = "c://temp//BoardDto";
 
 	@RequestMapping(value = "multiInsert.do", method = RequestMethod.POST)
-	public String BoardDtoByMultipart(@CookieValue(value="lon") int lon, @CookieValue(value="lat") int lat, MultipartHttpServletRequest request, Model model,
+	public String BoardDtoByMultipart(@CookieValue(value="lon", defaultValue="0") Double lon , @CookieValue(value="lat", defaultValue="0") Double lat, MultipartHttpServletRequest request, Model model,
 			HttpSession session) throws IOException, AuthenticationException {
-
 		ModelAndView mv = new ModelAndView();
 		MultipartFile multi = request.getFile("picFile");
 		String date = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
@@ -71,6 +70,8 @@ public class BoardController {
 		String userid = (String) session.getAttribute("userid");
 		String picFile = userid + "_" + date + ".jpg";
 
+		System.out.println("lat : " + lat);
+		System.out.println("lon : " + lon);
 		int result = service.insertBoard(userid, lat, lon, picFile, docTf, docTle, docCon, docTag, place);
 		if (result == 1) {
 			File file = new File(BoardDtoPath, picFile);
