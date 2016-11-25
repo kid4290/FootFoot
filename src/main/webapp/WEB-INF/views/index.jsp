@@ -78,7 +78,6 @@
          <li><a href="listResult.do">BEACON</a></li>
          <li><a href="myPlace.do">MYLIST</a></li>
          <li><a href="#">SETTING</a></li>
-         
       </ul>
       </nav>
       <!-- end nav -->
@@ -86,11 +85,13 @@
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
-         <div class="tl_locationborder">태림
+         <div class="tl_locationborder">
             <button type="button" class="btn btn-default btn-xs">재탐색</button>
             <button type="button" class="btn btn-default btn-xs"
                data-toggle="modal" data-target="#myModal">수동수정</button>
-            <span id="jusoView">현재 위치를 찾고 있습니다.</span>
+         </div>
+         <div class="tl_locationborder">
+         	<span id="jusoView" data-toggle="modal" data-target="#myModal">현재 위치를 찾고 있습니다.</span>
          </div>
          <h5>${nickname}님 환영합니다.</h5>
       </div>
