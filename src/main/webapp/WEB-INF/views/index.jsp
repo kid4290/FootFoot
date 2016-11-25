@@ -329,7 +329,7 @@
 		//주소 저장 프로세스
 		function setJuso(juso, lat, lng) {
 			$('#jusoView').html(juso);
-			cookie.set("lng", lng);
+			cookie.set("lon", lng);
 			cookie.set("lat", lat);
 			cookie.set("juso", juso);
 		}
