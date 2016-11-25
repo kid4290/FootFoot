@@ -72,7 +72,7 @@
       <nav>
       <ul class="box-primary-nav">
          <li class="box-label">FootFoot</li>
-         <li><a href="index.html">HOME</a> 
+         <li><a href="index.do">HOME</a> 
          <i class="ion-ios-circle-filled color"></i></li>
          <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
          <li><a href="myPlace.do">MYLIST</a></li>
