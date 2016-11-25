@@ -58,8 +58,8 @@
 		         <li><a href="index.html">HOME</a></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a>
 		         <i class="ion-ios-circle-filled color"></i></li>
-		         <li><a href="listResult.do">BEACON</a></li>
 		         <li><a href="myPlace.do">MYLIST</a></li>
+		         <li><a href="listResult.do">BEACON</a></li>
 		         <li><a href="#">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
