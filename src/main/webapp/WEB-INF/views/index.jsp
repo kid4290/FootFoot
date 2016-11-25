@@ -52,7 +52,6 @@
    </div>
    <!-- end Preloader -->
 
-
    <div class="container-fluid">
       <!-- box header -->
       <header class="box-header">
@@ -245,6 +244,7 @@
    <footer>
    <div class="container-fluid">
       <p class="copyright">© FootFoot</p>
+<%@include file="footer.jsp"%>
    </div>
    </footer>
    <!-- end footer -->
@@ -503,6 +503,7 @@
 
 	</script>
 	<!-- 현재위치를 고칠 수 있는 스크립트 끝 -->
+
 </body>
 
 </html>
