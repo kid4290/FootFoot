@@ -38,10 +38,12 @@
 
     <div class="container-fluid">
         <!-- box header -->
-        <header class="box-header">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
-            </div>
+         <header class="box-header">
+      <div class="box-logo">
+         <a href="index.do">
+         <img src="img/circlelogo.png" width="50" alt="Logo">
+         </a>
+      </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
                 <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
@@ -53,15 +55,12 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">About me</li>
-
-                <li><a href="index.html">Intro</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="services.html">services</a> <i class="ion-ios-circle-filled color"></i></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact me</a></li>
-
-
+               	<li class="box-label">FootFoot</li>
+		         <li><a href="index.do">HOME</a></li>
+		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
+		         <li><a href="myPlace.do">MYLIST</a></li>
+		         <li><a href="listResult.do">BEACON</a><i class="ion-ios-circle-filled color"></i></li>
+		         <li><a href="#">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
 
@@ -101,21 +100,15 @@
         </colgroup>
         <thead>
             <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Beacon Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Location</th>
-                <th scope="col">Page</th>
             </tr>
         </thead>
         <tbody>
             <c:forEach var="dto" items="${list}">
                 <tr>
-                   <td class="idx">${dto.B_IDX}</td>
-                    <td class="bId"><a href="contect.do" data-target="#modal_test" type="button" data-toggle="modal">${dto.B_ID}</a></td>
-                    <td class="bSpotName">${dto.B_SPOTNAME}</td>
-                    <td class="bLoaction">${dto.B_LOCACTION}</td>
-                    <td class="bPage"><a href="${dto.B_PAGE}">${dto.B_PAGE}</a></td>
+                    <td class="bSpotName"><a href="contect.do" data-target="#modal_test" type="button" data-toggle="modal">${dto.B_SPOTNAME}</a></td>
+                    <td class="bLoaction"><a href="${dto.B_PAGE}">${dto.B_LOCACTION}</a></td>
                 </tr>
             </c:forEach>
         </tbody>

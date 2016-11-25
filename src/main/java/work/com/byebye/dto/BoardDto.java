@@ -7,8 +7,8 @@ import org.springframework.web.multipart.MultipartFile;
 public class BoardDto implements Serializable {
 	   private String docNum;
 	   private String userid; 
-	   private int lat;
-	   private int lon; 
+	   private Double lat;
+	   private Double lon; 
 	   private String movFile;
 	   private String docTle;
 	   private String docCon;
@@ -22,7 +22,7 @@ public class BoardDto implements Serializable {
 	   
 	   
 	   
-	   public BoardDto(String docNum, String userid,int lat,int lon,String picFile,String movFile,String docTle,String docCon,String docDate,int docHit,String docTf,String docTag,String place) {
+	   public BoardDto(String docNum, String userid,Double lat,Double lon,String picFile,String movFile,String docTle,String docCon,String docDate,int docHit,String docTf,String docTag,String place) {
 	      this.docNum = docNum;
 	      this.userid = userid;
 	      this.lat = lat;
@@ -92,16 +92,16 @@ public class BoardDto implements Serializable {
 	   public void setUserid(String userid) {
 	      this.userid = userid;
 	   }
-	   public int getLat() {
+	   public Double getLat() {
 	      return lat;
 	   }
-	   public void setLat(int lat) {
+	   public void setLat(Double lat) {
 	      this.lat = lat;
 	   }
-	   public int getLon() {
+	   public Double getLon() {
 	      return lon;
 	   }
-	   public void setLon(int lon) {
+	   public void setLon(Double lon) {
 	      this.lon = lon;
 	   }
 	   public String getMovFile() {

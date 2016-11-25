@@ -40,8 +40,6 @@ start with 1
 increment BY 1
 ;
 
-insert into Board(DOC_NUM, USERID, LAT, LON, PIC_FILE, MOV_FILE, DOC_TLE, DOC_CON, DOC_DATE, DOC_HIT, DOC_TF, DOC_TAG, PLACE)
-values(Board_num.nextval, 'user01', 11, 12, 'p', 't', 'title', 'content', sysdate, 0, 'true', 'tag', 'place');
 
 select * from users;
 

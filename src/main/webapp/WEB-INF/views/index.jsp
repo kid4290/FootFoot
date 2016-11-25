@@ -44,6 +44,7 @@
    <div id="preloader">
       <div class="pre-container">
          <div class="spinner">
+         
             <div class="double-bounce1"></div>
             <div class="double-bounce2"></div>
          </div>
@@ -72,7 +73,7 @@
       <nav>
       <ul class="box-primary-nav">
          <li class="box-label">FootFoot</li>
-         <li><a href="index.html">HOME</a> 
+         <li><a href="index.do">HOME</a> 
          <i class="ion-ios-circle-filled color"></i></li>
          <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
          <li><a href="myPlace.do">MYLIST</a></li>
@@ -328,7 +329,7 @@
 		//주소 저장 프로세스
 		function setJuso(juso, lat, lng) {
 			$('#jusoView').html(juso);
-			cookie.set("lng", lng);
+			cookie.set("lon", lng);
 			cookie.set("lat", lat);
 			cookie.set("juso", juso);
 		}

@@ -50,15 +50,10 @@ public class UserController {
       if(grade == null) {
          nickname = new String(nickname.getBytes("8859_1"), "UTF-8");
          int result = userservice.insertKakao(userid, nickname, userimg, "naver");
-         System.out.println(userid);
-         System.out.println(nickname);
-         System.out.println(userimg);
-         System.out.println(grade);
 
          if(result > 0) {
             session.setAttribute("userid", userid);
             session.setAttribute("nickname", nickname);
-            System.out.println(nickname);
             session.setAttribute("grade", grade);
 
             mv.addObject("user", userid);
@@ -89,14 +84,10 @@ public class UserController {
    @RequestMapping(value="kakaoLogin.do")
    public String kakaoLogin(String userid, String nickname, String userimg, HttpSession session) throws UnsupportedEncodingException {
       String grade = userservice.loginCheck(userid);
-      System.out.println(grade);
       ModelAndView mv = new ModelAndView();
       if(grade == null) {
          nickname = new String(nickname.getBytes("8859_1"), "UTF-8");
          int result = userservice.insertKakao(userid, nickname, userimg, "kakao");
-         System.out.println(userid);
-         System.out.println(nickname);
-         System.out.println(userimg);
          if(result > 0) {
             session.setAttribute("userid", userid);
             session.setAttribute("nickname", nickname);
@@ -127,13 +118,9 @@ public class UserController {
    @RequestMapping(value="facebookLogin.do")
    public String facebookLogin(String userid, String nickname, String userimg, HttpSession session) {
       String grade = userservice.loginCheck(userid);
-      System.out.println(grade);
       ModelAndView mv = new ModelAndView();
       if(grade == null) {
          int result = userservice.insertKakao(userid, nickname, userimg, "facebook");
-         System.out.println(userid);
-         System.out.println(nickname);
-         System.out.println(userimg);
          if(result > 0) {
             session.setAttribute("userid", userid);
             session.setAttribute("nickname", nickname);

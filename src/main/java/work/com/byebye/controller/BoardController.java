@@ -18,6 +18,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -56,13 +57,10 @@ public class BoardController {
 	private String BoardDtoPath = "c://temp//BoardDto";
 
 	@RequestMapping(value = "multiInsert.do", method = RequestMethod.POST)
-	public String BoardDtoByMultipart(MultipartHttpServletRequest request, Model model,
+	public String BoardDtoByMultipart(@CookieValue(value="lon", defaultValue="0") Double lon , @CookieValue(value="lat", defaultValue="0") Double lat, MultipartHttpServletRequest request, Model model,
 			HttpSession session) throws IOException, AuthenticationException {
-
 		ModelAndView mv = new ModelAndView();
 		MultipartFile multi = request.getFile("picFile");
-		int lat = 11;
-		int lon = 12;
 		String date = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 		String docTf = request.getParameter("docTf");
 		String docTle = request.getParameter("docTle");
@@ -72,6 +70,8 @@ public class BoardController {
 		String userid = (String) session.getAttribute("userid");
 		String picFile = userid + "_" + date + ".jpg";
 
+		System.out.println("lat : " + lat);
+		System.out.println("lon : " + lon);
 		int result = service.insertBoard(userid, lat, lon, picFile, docTf, docTle, docCon, docTag, place);
 		if (result == 1) {
 			File file = new File(BoardDtoPath, picFile);

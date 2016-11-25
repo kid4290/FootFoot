@@ -27,7 +27,7 @@ public class BoardService {
 	}
 
 	// 사진넣기
-	public int insertBoard(String userid, int lat, int lon, String picFile, String docTf, String docTle, String docCon,
+	public int insertBoard(String userid, Double lat, Double lon, String picFile, String docTf, String docTle, String docCon,
 			String docTag, String place) throws AuthenticationException {
 		String movFile = "notYet";
 		int docHit = 0;
