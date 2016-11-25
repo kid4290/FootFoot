@@ -40,9 +40,11 @@
     <div class="container-fluid">
         <!-- box-header -->
         <header class="box-header">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
-            </div>
+      <div class="box-logo">
+         <a href="index.do">
+         <img src="img/circlelogo.png" width="50" alt="Logo">
+         </a>
+      </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
                 <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
@@ -58,8 +60,8 @@
 		         <li><a href="index.html">HOME</a></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a>
 		         <i class="ion-ios-circle-filled color"></i></li>
-		         <li><a href="listResult.do">BEACON</a></li>
 		         <li><a href="myPlace.do">MYLIST</a></li>
+		         <li><a href="listResult.do">BEACON</a></li>
 		         <li><a href="#">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
