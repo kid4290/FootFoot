@@ -86,7 +86,7 @@
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
-         <div>
+         <div class="tl_locationborder">태림
             <button type="button" class="btn btn-default btn-xs">재탐색</button>
             <button type="button" class="btn btn-default btn-xs"
                data-toggle="modal" data-target="#myModal">수동수정</button>
