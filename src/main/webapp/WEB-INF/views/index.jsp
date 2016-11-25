@@ -55,7 +55,7 @@
       <!-- box header -->
       <header class="box-header">
       <div class="box-logo">
-         <a href="index.html">
+         <a href="index.do">
          <img src="img/circlelogo.png" width="50" alt="Logo">
          </a>
       </div>
