@@ -42,18 +42,6 @@
 </head>
 <body>
 
-   <!-- Preloader -->
-   <div id="preloader">
-      <div class="pre-container">
-         <div class="spinner">
-         
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-         </div>
-      </div>
-   </div>
-   <!-- end Preloader -->
-   
 <div data-role="page">   
 
    <div class="container-fluid">
@@ -256,8 +244,8 @@
   <div data-role="navbar" >
    <ul>
     <li><a href="index.do" data-icon="home" class="">Home</a></li>
-    <li><a href="02-b.html" data-icon="star">Insert</a></li>
-    <li><a href="02-c.html" data-icon="search" >MyList</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
     <li><a href="list.do" data-icon="check" >Beacon</a></li>
     <li><a href="setting.do" data-icon="gear">Setting</a></li>
    </ul>

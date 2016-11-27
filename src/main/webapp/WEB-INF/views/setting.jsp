@@ -24,22 +24,7 @@
     
 </head>
 <body>
-<!-- header와 footer 태그에 data-position="fixed"를 주게되면 
- content에 다수의 데이터가 추가되어 화면에 스크롤이 생기더라도 header와 footer가 스크롤의 위치가 변해도 항상 같은 위치에
- 고정된다. 또한 해당 content클릭시 해당내용이 확대되며 상단과 하단의 footer와 header가 사라지는 효과가 발생한다. 
--->
 <div data-role="page">
-
-<!-- Preloader -->
-    <div id="preloader">
-        <div class="pre-container">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- end Preloader -->
 
  <div data-role="header" data-position="fixed" >
    <header class="box-header">
@@ -113,8 +98,8 @@
   <div data-role="navbar" >
    <ul>
     <li><a href="index.do" data-icon="home" class="">Home</a></li>
-    <li><a href="02-b.html" data-icon="star">Insert</a></li>
-    <li><a href="02-c.html" data-icon="search" >MyList</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
     <li><a href="list.do" data-icon="check" >Beacon</a></li>
     <li><a href="setting.do" data-icon="gear">Setting</a></li>
    </ul>
