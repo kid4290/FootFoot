@@ -7,6 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
     <title>Box personal portfolio Template</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 
@@ -25,6 +28,9 @@
 
 <body>
 
+<div data-role="page">
+
+ <div data-role="header" data-position="fixed" >
     <div class="container-fluid"> 
        <!-- box-header -->
         <header class="box-header">
@@ -60,7 +66,9 @@
         </nav>
         <!-- end nav -->  
     </div>
+    </div>
     
+    <div data-role="content">
     <!-- Top bar -->
     <div class="top-bar">
         <h1>내 프로필 정도?</h1>
@@ -97,20 +105,27 @@
         </form>
     </div>
     <!-- end Main container -->
+    </div>
 
 
     <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© FootFoot</p>
-        </div>
-    </footer>
+<!--    <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c"> -->
+<!--   <div data-role="navbar" > -->
+<!--    <ul> -->
+<!--     <li><a href="index.do" data-icon="home" class="">Home</a></li> -->
+<!--     <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li> -->
+<!--     <li><a href="myPlace.do" data-icon="search" >MyList</a></li> -->
+<!--     <li><a href="list.do" data-icon="check" >Beacon</a></li> -->
+<!--     <li><a href="setting.do" data-icon="gear">Setting</a></li> -->
+<!--    </ul> -->
+<!--   </div> -->
+<!--  </div> -->
     <!-- end footer -->
     
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
-
+</div>
 
 
     <!-- jQuery -->

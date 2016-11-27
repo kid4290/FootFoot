@@ -42,8 +42,9 @@
 </head>
 <body>
 
-<div data-role="page">   
+<div data-role="page">
 
+ <div data-role="header" data-position="fixed" >   
    <div class="container-fluid">
       <!-- box header -->
       <header class="box-header">
@@ -65,16 +66,23 @@
       <nav>
             <ul class="box-primary-nav">
                  <li class="box-label">FootFoot</li>
-		         <li><a href="index.do">HOME</a></li>
+		         <li><a href="index.do">HOME</a><i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
-		         <li><a href="myPlace.do">MYLIST</a><i class="ion-ios-circle-filled color"></i></li>
+		         <li><a href="myPlace.do">MYLIST</a></li>
 		         <li><a href="list.do">BEACON</a></li>
 		         <li><a href="setting.do">SETTING</a></li>
-		         
+		         <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
             </ul>
         </nav>
       <!-- end nav -->
+      </div>
       
+      <div data-role="content">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
@@ -90,7 +98,6 @@
       </div>
       </section>
       <!-- end box-intro -->
-   </div>
 
 
    <!-- main container -->
@@ -231,6 +238,7 @@
       <!-- end portfolio div -->
    </div>
    <!-- end main container -->
+   </div>
 
 
 <!-- 하단 고정 푸터 -->
