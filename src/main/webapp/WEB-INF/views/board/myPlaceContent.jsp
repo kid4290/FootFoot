@@ -1,18 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum=scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>Box personal portfolio Template</title>
-    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    
+
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +24,7 @@
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
+	
 
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
@@ -39,8 +43,10 @@
         </div>
     </div>
     <!-- end Preloader -->
+    
+<div data-role="page">    
 
-    <div class="container-fluid"> 
+    <div class="container-fluid" data-role="header" data-position="fixed"> 
        <!-- box-header -->
        <header class="box-header">
       <div class="box-logo">
@@ -63,7 +69,7 @@
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
 		         <li><a href="myPlace.do">MYLIST</a><i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="list.do">BEACON</a></li>
-		         <li><a href="#">SETTING</a></li>
+		         <li><a href="setting.do">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
 
@@ -118,13 +124,21 @@
             <p class="copyright">© 하단 풋터</p>
         </div>
     </footer>
+    
     <!-- end footer -->
+    
+	<div data-role="footer" data-position="fixed">
+ 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
+ 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
+ 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
+ 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
+ 	</div>
     
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
-
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
@@ -134,9 +148,9 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
 
-
     <!--  custom script -->
     <script src="js/custom.js"></script>
+    
 
 </body>
 

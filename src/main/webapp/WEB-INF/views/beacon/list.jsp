@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Beacon List Page</title>
-    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
 		         <li><a href="myPlace.do">MYLIST</a></li>
 		         <li><a href="listResult.do">BEACON</a><i class="ion-ios-circle-filled color"></i></li>
-		         <li><a href="#">SETTING</a></li>
+		         <li><a href="setting.do">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
 

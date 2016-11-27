@@ -2,15 +2,13 @@
    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my photo</title>
-    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -60,7 +58,7 @@
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
 		         <li><a href="myPlace.do">MYLIST</a><i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="list.do">BEACON</a></li>
-		         <li><a href="#">SETTING</a></li>
+		         <li><a href="setting.do">SETTING</a></li>
 		         
                 <li class="box-label">Follow me</li>
 

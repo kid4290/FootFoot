@@ -37,6 +37,11 @@ public class UserController {
    public String index() {
       return "index";
    }
+   
+   @RequestMapping(value="setting.do")
+   public String setting() {
+      return "setting";
+   }
 
    /** 네이버 로그인 시 아이디 중복 체크 후 로그인 및 회원등록 
     * @throws UnsupportedEncodingException */

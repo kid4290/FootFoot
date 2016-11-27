@@ -43,6 +43,7 @@ public class BoardDao {
 	public int insertBoard(BoardDto dto) {
 		return sqlSession.insert("insertBoard", dto);
 	}
+	
 
 	// 사진조회
 	public List<BoardDto> myPlace(String userid) {
