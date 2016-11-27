@@ -7,10 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-<title>Box personal portfolio Template</title>
+<title>index</title>
 <link rel="icon" href="img/fav.png" type="image/x-icon">
 
 <!-- Bootstrap -->
@@ -42,21 +39,7 @@
 </head>
 <body>
 
-<div data-role="page">
-
- <div data-role="header" data-position="fixed" >
-   <!-- Preloader -->
-   <div id="preloader">
-      <div class="pre-container">
-         <div class="spinner">
-         
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-         </div>
-      </div>
-   </div>
-   <!-- end Preloader -->
-
+<div id="pages" class="container">
    <div class="container-fluid">
       <!-- box header -->
       <header class="box-header">
@@ -93,9 +76,9 @@
             </ul>
         </nav>
       <!-- end nav -->
-      </div>
       
-      <div data-role="content">
+
+	<div class="content">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
@@ -251,28 +234,32 @@
       <!-- end portfolio div -->
    </div>
    <!-- end main container -->
-   </div>
-
+</div>
 
    <!-- footer -->
-    <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
-  <div data-role="navbar" >
-   <ul>
-    <li><a href="index.do" data-icon="home" class="">Home</a></li>
-    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
-    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
-    <li><a href="list.do" data-icon="check" >Beacon</a></li>
-    <li><a href="setting.do" data-icon="gear">Setting</a></li>
-   </ul>
-  </div>
- </div>
+<footer>
+        <div class="navbar-mobile btn-group btn-group-justified navbar-fixed-bottom">
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <span class="text">about</span>
+            </a>
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="text">favorites</span>
+            </a>
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-download-alt"></span>
+                <span class="text">downloads</span>
+            </a>
+        </div>
+    </footer>
    <!-- end footer -->
 
    <!-- back to top -->
    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
    <!-- end back to top -->
-   </div>
 
+</div>
 
 
    <!-- jQuery -->
