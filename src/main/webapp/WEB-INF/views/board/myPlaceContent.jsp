@@ -6,14 +6,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum=scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
     <title>Box personal portfolio Template</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
-    
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
-    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     
 
 
@@ -71,6 +69,7 @@
         <!-- end nav -->  
     </div>
     
+    <div data-role="content">
     <!-- Top bar -->
     <div class="top-bar">
         <h1>내 컨텐츠</h1>
@@ -105,23 +104,23 @@
         </div>
     </div>
     <!-- end Main container -->
+    </div>
 
 
     <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© 하단 풋터</p>
-        </div>
-    </footer>
+    <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
+  <div data-role="navbar" >
+   <ul>
+    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
+    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+    <li><a href="setting.do" data-icon="gear">Setting</a></li>
+   </ul>
+  </div>
+ </div>
     
     <!-- end footer -->
-    
-	<div data-role="footer" data-position="fixed">
- 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
- 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
- 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
- 		<a href="#"><img src="img/circlelogo.png" style="width:50px; height:50px"></a>
- 	</div>
     
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>

@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Box personal portfolio Template</title>
+<title>index</title>
 <link rel="icon" href="img/fav.png" type="image/x-icon">
 
 <!-- Bootstrap -->
@@ -39,18 +39,7 @@
 </head>
 <body>
 
-   <!-- Preloader -->
-   <div id="preloader">
-      <div class="pre-container">
-         <div class="spinner">
-         
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-         </div>
-      </div>
-   </div>
-   <!-- end Preloader -->
-
+<div id="pages" class="container">
    <div class="container-fluid">
       <!-- box header -->
       <header class="box-header">
@@ -88,6 +77,8 @@
         </nav>
       <!-- end nav -->
       
+
+	<div class="content">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
@@ -243,21 +234,32 @@
       <!-- end portfolio div -->
    </div>
    <!-- end main container -->
-
+</div>
 
    <!-- footer -->
-   <footer>
-   <div class="container-fluid">
-      <p class="copyright">© FootFoot</p>
-<%@include file="footer.jsp"%>
-   </div>
-   </footer>
+<footer>
+        <div class="navbar-mobile btn-group btn-group-justified navbar-fixed-bottom">
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-info-sign"></span>
+                <span class="text">about</span>
+            </a>
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="text">favorites</span>
+            </a>
+            <a href="#" class="btn btn-default">
+                <span class="glyphicon glyphicon-download-alt"></span>
+                <span class="text">downloads</span>
+            </a>
+        </div>
+    </footer>
    <!-- end footer -->
 
    <!-- back to top -->
    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
    <!-- end back to top -->
 
+</div>
 
 
    <!-- jQuery -->
@@ -318,7 +320,6 @@
 
 	<script type="text/javascript"
 		src="http://apis.daum.net/maps/maps3.js?apikey=d9d5aabffb52cda458f3d0c2f07c8553&libraries=services"></script>
-	</script>
 
 	<!-- 현재위치 잡기 시작 -->
 	<script type="text/javascript">

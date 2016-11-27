@@ -7,7 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
     <title>Beacon List Page</title>
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 
@@ -24,18 +26,9 @@
 </head>
 
 <body>
+<div data-role="page">
 
-    <!-- Preloader -->
-<!--     <div id="preloader"> -->
-<!--         <div class="pre-container"> -->
-<!--             <div class="spinner"> -->
-<!--                 <div class="double-bounce1"></div> -->
-<!--                 <div class="double-bounce2"></div> -->
-<!--             </div> -->
-<!--         </div> -->
-<!--     </div> -->
-    <!-- end Preloader -->
-
+<div data-role="header" data-position="fixed" >
     <div class="container-fluid">
         <!-- box header -->
          <header class="box-header">
@@ -72,7 +65,9 @@
         </nav>
         <!-- end nav -->
     </div>
-
+    </div>
+    
+<div data-role="content">
     <!-- top bar -->
     <div class="top-bar">
     ${mac}
@@ -117,67 +112,31 @@
             </div>
             <!-- end service-box -->
 
-            <!-- service-box -->
-            <div class="col-md-4 service-box">
-                <i class="ion-android-options size-50"></i>
-                <h3>Easy Customization</h3>
-                <div class="h-10"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae </p>
-            </div>
-            <!-- end service-box -->
-
-            <!-- service-box -->
-            <div class="col-md-4  service-box">
-                <i class="ion-android-checkmark-circle size-50"></i>
-                <h3>Creative Design</h3>
-                <div class="h-10"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae </p>
-            </div>
-            <!-- end service-box -->
-
-            <!-- service-box -->
-            <div class="col-md-4  service-box">
-                <i class="ion-ios-pulse-strong size-50"></i>
-                <h3>user friendly</h3>
-                <div class="h-10"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae </p>
-            </div>
-            <!-- end service-box -->
-
-            <!-- service-box -->
-            <div class="col-md-4  service-box">
-                <i class="ion-earth size-50"></i>
-                <h3>fully customizible</h3>
-                <div class="h-10"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae </p>
-            </div>
-            <!-- end service-box -->
-
-            <!-- service-box -->
-            <div class="col-md-4  service-box">
-                <i class="ion-speedometer size-50"></i>
-                <h3>retina ready</h3>
-                <div class="h-10"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae </p>
-            </div>
-            <!-- end service-box -->
 
         </div>
+    </div>
     </div>
 
 
     <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div>
-    </footer>
+ <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
+  <div data-role="navbar" >
+   <ul>
+    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
+    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+    <li><a href="setting.do" data-icon="gear">Setting</a></li>
+   </ul>
+  </div>
+ </div>
     <!-- end footer -->
 
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
+</div>
 
 
     <!-- jQuery -->

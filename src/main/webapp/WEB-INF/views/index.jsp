@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-<title>index 페이지</title>
-<link rel="icon" href="img/logo.png" type="image/x-icon">
+<title>index</title>
+<link rel="icon" href="img/fav.png" type="image/x-icon">
 
 
 <!-- Bootstrap -->
@@ -42,10 +42,9 @@
 </style>
 </head>
 <body>
+<div data-role="page">
 
-<div data-role="page">   
-
-   <div class="container-fluid">
+ <div data-role="header" data-position="fixed" >
       <!-- box header -->
       <header class="box-header">
       <div class="box-logo">
@@ -61,21 +60,30 @@
       <!-- box-primary-nav-trigger --> 
       </header>
       <!-- end box header -->
+      </div>
 
       <!-- nav -->
       <nav>
             <ul class="box-primary-nav">
                  <li class="box-label">FootFoot</li>
-		         <li><a href="index.do">HOME</a></li>
+		         <li><a href="index.do">HOME</a><i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
-		         <li><a href="myPlace.do">MYLIST</a><i class="ion-ios-circle-filled color"></i></li>
+		         <li><a href="myPlace.do">MYLIST</a></li>
 		         <li><a href="list.do">BEACON</a></li>
 		         <li><a href="setting.do">SETTING</a></li>
 		         
+                <li class="box-label">Follow me</li>
+
+                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
             </ul>
         </nav>
       <!-- end nav -->
       
+
+	<div class="container-fluid">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
@@ -91,8 +99,6 @@
       </div>
       </section>
       <!-- end box-intro -->
-   </div>
-
 
    <!-- main container -->
    <div class="main-container portfolio-inner clearfix">
@@ -232,27 +238,28 @@
       <!-- end portfolio div -->
    </div>
    <!-- end main container -->
+   </div>
 
+   <!-- footer -->
+	<div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
+	  <div data-role="navbar" >
+	   <ul>
+	    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+	    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+	    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
+	    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+	    <li><a href="setting.do" data-icon="gear">Setting</a></li>
+	   </ul>
+	  </div>
+	 </div>
+   <!-- end footer -->
 
-<!-- 하단 고정 푸터 -->
-  <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
-  <div data-role="navbar" >
-   <ul>
-    <li><a href="index.do" data-icon="home" class="">Home</a></li>
-    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
-    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
-    <li><a href="list.do" data-icon="check" >Beacon</a></li>
-    <li><a href="setting.do" data-icon="gear">Setting</a></li>
-   </ul>
-  </div>
- </div>
- 
    <!-- back to top -->
    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
    <!-- end back to top -->
 
-<!-- 페이지 끝 div -->
 </div>
+
 
 
    <!-- jQuery -->
@@ -313,7 +320,6 @@
 
 	<script type="text/javascript"
 		src="http://apis.daum.net/maps/maps3.js?apikey=d9d5aabffb52cda458f3d0c2f07c8553&libraries=services"></script>
-	
 
 	<!-- 현재위치 잡기 시작 -->
 	<script type="text/javascript">
