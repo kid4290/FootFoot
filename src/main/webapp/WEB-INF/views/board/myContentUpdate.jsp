@@ -28,10 +28,8 @@
 
 <body>
 
-<div data-role="page">
 
  <div data-role="header" data-position="fixed" >
-    <div class="container-fluid"> 
        <!-- box-header -->
         <header class="box-header">
       <div class="box-logo">
@@ -45,7 +43,9 @@
             </a>
         </header>
         <!-- end box-header -->
+        </div>
         
+        <div class="content"> 
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
@@ -66,9 +66,8 @@
         </nav>
         <!-- end nav -->  
     </div>
-    </div>
     
-    <div data-role="content">
+    <div class="container main-container clearfix">
     <!-- Top bar -->
     <div class="top-bar">
         <h1>내 프로필 정도?</h1>
@@ -77,7 +76,7 @@
     <!-- end Top bar -->
     
     <!-- Main container -->
-    <div class="container main-container clearfix"> 
+     
         <div class="col-md-6">
             <img src="http://localhost:8090/spring15/imgLoad.do?fileName=${picFile}" class="img-responsive" alt="" />
         </div>
@@ -105,27 +104,25 @@
         </form>
     </div>
     <!-- end Main container -->
-    </div>
 
 
     <!-- footer -->
-<!--    <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c"> -->
-<!--   <div data-role="navbar" > -->
-<!--    <ul> -->
-<!--     <li><a href="index.do" data-icon="home" class="">Home</a></li> -->
-<!--     <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li> -->
-<!--     <li><a href="myPlace.do" data-icon="search" >MyList</a></li> -->
-<!--     <li><a href="list.do" data-icon="check" >Beacon</a></li> -->
-<!--     <li><a href="setting.do" data-icon="gear">Setting</a></li> -->
-<!--    </ul> -->
-<!--   </div> -->
-<!--  </div> -->
+   <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
+  <div data-role="navbar">
+   <ul>
+    <li><a href="index.do" data-icon="home" >Home</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
+    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+    <li><a href="setting.do" data-icon="gear">Setting</a></li>
+   </ul>
+  </div>
+ </div>
     <!-- end footer -->
     
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
-</div>
 
 
     <!-- jQuery -->
