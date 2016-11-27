@@ -7,6 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 <title>Box personal portfolio Template</title>
 <link rel="icon" href="img/fav.png" type="image/x-icon">
 
@@ -39,6 +42,9 @@
 </head>
 <body>
 
+<div data-role="page">
+
+ <div data-role="header" data-position="fixed" >
    <!-- Preloader -->
    <div id="preloader">
       <div class="pre-container">
@@ -87,7 +93,9 @@
             </ul>
         </nav>
       <!-- end nav -->
+      </div>
       
+      <div data-role="content">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
@@ -243,20 +251,27 @@
       <!-- end portfolio div -->
    </div>
    <!-- end main container -->
+   </div>
 
 
    <!-- footer -->
-   <footer>
-   <div class="container-fluid">
-      <p class="copyright">© FootFoot</p>
-<%@include file="footer.jsp"%>
-   </div>
-   </footer>
+    <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
+  <div data-role="navbar" >
+   <ul>
+    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
+    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
+    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+    <li><a href="setting.do" data-icon="gear">Setting</a></li>
+   </ul>
+  </div>
+ </div>
    <!-- end footer -->
 
    <!-- back to top -->
    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
    <!-- end back to top -->
+   </div>
 
 
 
@@ -318,7 +333,6 @@
 
 	<script type="text/javascript"
 		src="http://apis.daum.net/maps/maps3.js?apikey=d9d5aabffb52cda458f3d0c2f07c8553&libraries=services"></script>
-	</script>
 
 	<!-- 현재위치 잡기 시작 -->
 	<script type="text/javascript">
