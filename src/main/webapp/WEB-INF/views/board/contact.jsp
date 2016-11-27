@@ -14,7 +14,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
