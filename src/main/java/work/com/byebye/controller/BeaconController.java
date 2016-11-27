@@ -22,8 +22,6 @@ import work.com.byebye.service.BeaconService;
 @Controller
 public class BeaconController {
      
-    private Logger logger = Logger.getLogger(BeaconController.class);
-     
     @Resource(name="beaconService")
     private BeaconService beaconService;
      
@@ -32,16 +30,12 @@ public class BeaconController {
         List<BeaconDto> list = beaconService.getBeaconList();
         ModelAndView mv = new ModelAndView("beacon/list");
         mv.addObject("list", list);
-        System.out.println(list);
-        //mv.setViewName("beacon/list"); 
         
-        logger.debug("list: " + list);
         return mv;
     }
     
     @RequestMapping(value = "listResult.do", method=RequestMethod.GET)
 	public ModelAndView getResult(String mac) {
-    	System.out.println(mac);
 		
 		JSONParser parser = new JSONParser();
 		ArrayList<String> macList = new ArrayList<String>();
@@ -53,7 +47,6 @@ public class BeaconController {
 				macList.add(iterator.next());
 			}
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println(macList);
@@ -61,7 +54,6 @@ public class BeaconController {
 		ModelAndView mv = new ModelAndView("beacon/list");
         mv.addObject("list", list);
         
-        logger.debug("list: " + list);
         return mv;
     }
 }
