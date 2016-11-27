@@ -83,12 +83,6 @@
 		         <li><a href="list.do">BEACON</a></li>
 		         <li><a href="setting.do">SETTING</a></li>
 		         
-                <li class="box-label">Follow me</li>
-
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
             </ul>
         </nav>
       <!-- end nav -->
