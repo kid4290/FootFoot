@@ -112,7 +112,7 @@
 					<tbody>
 						<c:forEach var="dto" items="${list}">
 							<tr>
-								<td class="bSpotName"><a href="contect.do"
+								<td class="bSpotName"><a href="beacon.do?BId=${dto.B_ID}"
 									data-target="#modal_test" type="button" data-toggle="modal">${dto.B_SPOTNAME}</a></td>
 								<td class="bLoaction"><a type="button" href="${dto.B_PAGE}">${dto.B_LOCACTION}</a></td>
 							</tr>
@@ -136,7 +136,7 @@
 				<li><a href="index.do" data-icon="home">Home</a></li>
 				<li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
 				<li><a href="myPlace.do" data-icon="search">MyList</a></li>
-				<li><a href="list.do" data-icon="check">Beacon</a></li>
+				<li><a href="beaconlist.do" data-icon="check">Beacon</a></li>
 				<li><a href="setting.do" data-icon="gear">Setting</a></li>
 			</ul>
 		</div>
@@ -169,9 +169,7 @@
 				<div class="modal-header">
 					<a type="button" class="close" data-dismiss="modal"
 						aria-hidden="true">&times;</a>
-						<c:forEach var="dto" items="${list}">
-					<h2 class="modal-title text-center fc-orange">${dto.B_SPOTNAME}</h2>
-					</c:forEach>
+					<h2 class="modal-title text-center fc-orange">${vo.bSpotName}</h2>
 				</div>
 				<div class="modal-body">
 					<!-- main-container -->
@@ -180,7 +178,7 @@
 							<h3 class="text-uppercase">대 제목</h3>
 							<h5>소 제목</h5>
 							<div class="h-30"></div>
-							<p>내용</p>
+							<p>내용: ${vo}</p>
 							<div class="contact-info">
 								<p>
 									<i class="ion-android-call"></i> 010 9295 4920

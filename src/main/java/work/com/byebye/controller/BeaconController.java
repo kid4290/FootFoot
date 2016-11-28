@@ -25,14 +25,24 @@ public class BeaconController {
     @Resource(name="beaconService")
     private BeaconService beaconService;
      
-    @RequestMapping(value = "list.do")
-    public ModelAndView getBoardList() {
+    @RequestMapping(value = "beaconlist.do")
+    public ModelAndView getBeaconList() {
         List<BeaconDto> list = beaconService.getBeaconList();
-        ModelAndView mv = new ModelAndView("beacon/list");
+        ModelAndView mv = new ModelAndView("beacon/beaconList");
         mv.addObject("list", list);
         
         return mv;
     }
+    
+    @RequestMapping(value = "beacon.do")
+    public ModelAndView getBeacon(String BId) {
+        BeaconDto vo = beaconService.getBeacon(BId);
+        ModelAndView mv = new ModelAndView("redirect:/beacon.do");
+        mv.addObject("vo", vo);
+        
+        return mv;
+    }
+    
     
     @RequestMapping(value = "listResult.do", method=RequestMethod.GET)
 	public ModelAndView getResult(String mac) {

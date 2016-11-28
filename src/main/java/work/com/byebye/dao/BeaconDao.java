@@ -1,8 +1,4 @@
 package work.com.byebye.dao;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,7 +12,6 @@ import work.com.byebye.dto.BeaconDto;
 
 @Repository
 public class BeaconDao {
-	/* spring di : setter injection */
 	private FactoryDAODataSource factory;
 
 	@Autowired
@@ -33,12 +28,20 @@ public class BeaconDao {
 		return instance;
 	}
 
+	BeaconDto dto;
+	
 	private BeaconDao() {}
 
 	public List<BeaconDto> getBeaconList() {
 		return sqlSession.selectList("getBeaconList");
 	}
+	
+	public BeaconDto getBeacon(String BId) {
+		dto = sqlSession.selectOne("getBeacon", BId);
+		return dto;
+	}
 
+	@SuppressWarnings("rawtypes")
 	public List<BeaconDto> getBeaconResult(ArrayList<String> macList) {
 		HashMap<String, ArrayList> temp = new HashMap<String, ArrayList>();
 		temp.put("macList", macList);

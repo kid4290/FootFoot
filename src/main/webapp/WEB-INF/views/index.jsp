@@ -69,7 +69,7 @@
 		         <li><a href="index.do">HOME</a><i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
 		         <li><a href="myPlace.do">MYLIST</a></li>
-		         <li><a href="list.do">BEACON</a></li>
+		         <li><a href="beaconlist.do">BEACON</a></li>
 		         <li><a href="setting.do">SETTING</a></li>
 		         
                 <li class="box-label">Follow me</li>
@@ -248,7 +248,7 @@
 	    <li><a href="index.do" data-icon="home" >Home</a></li>
 	    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
 	    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
-	    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+	    <li><a href="beaconlist.do" data-icon="check" >Beacon</a></li>
 	    <li><a href="setting.do" data-icon="gear">Setting</a></li>
 	   </ul>
 	  </div>

@@ -20,3 +20,8 @@ create sequence seq_beacon
   increment BY 1
 ;
 
+select * from beacon;
+
+delete from BEACON where b_id='22';
+
+select * from beacon where b_id = 'FF:C9:DD:C2:19:2E';

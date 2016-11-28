@@ -19,10 +19,14 @@ public class BeaconService {
 
 	public BeaconService() {}
 
-	/** �α��� ��û ���� */
 	public List<BeaconDto> getBeaconList() {
 		return dao.getBeaconList();
 	}
+	
+	public BeaconDto getBeacon(String BId) {
+		return dao.getBeacon(BId);
+	}
+	
 
 	public List<BeaconDto> getBeaconResult(ArrayList<String> macList) {
 		return dao.getBeaconResult(macList);

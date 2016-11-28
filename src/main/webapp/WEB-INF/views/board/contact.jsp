@@ -52,7 +52,7 @@
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a>
 		         <i class="ion-ios-circle-filled color"></i></li>
 		         <li><a href="myPlace.do">MYLIST</a></li>
-		         <li><a href="listResult.do">BEACON</a></li>
+		         <li><a href="beaconlist.do">BEACON</a></li>
 		         <li><a href="setting.do">SETTING</a></li>
 
                 <li class="box-label">Follow me</li>
@@ -147,7 +147,7 @@
     <li><a href="index.do" data-icon="home" class="">Home</a></li>
     <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
     <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
-    <li><a href="list.do" data-icon="check" >Beacon</a></li>
+    <li><a href="beaconlist.do" data-icon="check" >Beacon</a></li>
     <li><a href="setting.do" data-icon="gear">Setting</a></li>
    </ul>
   </div>
@@ -158,7 +158,6 @@
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
 
-</div>
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js"></script>
