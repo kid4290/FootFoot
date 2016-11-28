@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LOGIN</title>
-<link rel="icon" href="img/fav.png" type="image/x-icon">
+<link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 <style>
 .tl_container {
    width: 100%;
