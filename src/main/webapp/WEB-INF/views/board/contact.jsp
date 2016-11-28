@@ -14,7 +14,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
@@ -26,9 +26,7 @@
 
 <body>
 
-<div data-role="page">
 <div data-role="header" data-position="fixed" >
-    <div class="container-fluid">
         <!-- box-header -->
         <header class="box-header">
       <div class="box-logo">
@@ -43,7 +41,9 @@
             <!-- box-primary-nav-trigger -->
         </header>
         <!-- end box-header -->
+        </div>
 
+	<div class="content">
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
@@ -64,11 +64,10 @@
             </ul>
         </nav>
         <!-- end nav -->
+        </div>
 
-    </div>
-    </div>
 
- <div data-role="content">
+ <div class="content">
     <!-- top bar -->
     <div class="top-bar">
         <h1>Insert</h1>
@@ -77,7 +76,7 @@
     <!-- end top bar -->
 
     <!-- main-container -->
-    <div class="container main-container">
+    
         <div class="col-md-6">
             <form action="multiInsert.do" method="POST" enctype="multipart/form-data">
                 <div class="row">
@@ -138,7 +137,6 @@
         </div>
 
 
-    </div>
     </div>
     <!-- end main-container -->
 

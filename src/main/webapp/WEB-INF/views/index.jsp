@@ -11,7 +11,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 <title>index</title>
-<link rel="icon" href="img/fav.png" type="image/x-icon">
+<link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 
 
 <!-- Bootstrap -->
@@ -42,7 +42,7 @@
 </style>
 </head>
 <body>
-<div data-role="page">
+
 
  <div data-role="header" data-position="fixed" >
       <!-- box header -->
@@ -54,7 +54,7 @@
       </div>
       <!-- box-nav --> 
       <a class="box-primary-nav-trigger" href="#0"> 
-      <span class="box-menu-text">Menu</span>
+<!--       <span class="box-menu-text">Menu</span> -->
       <span class="box-menu-icon"></span>
       </a> 
       <!-- box-primary-nav-trigger --> 
@@ -62,6 +62,7 @@
       <!-- end box header -->
       </div>
 
+	<div class="content">
       <!-- nav -->
       <nav>
             <ul class="box-primary-nav">
@@ -81,16 +82,17 @@
             </ul>
         </nav>
       <!-- end nav -->
+      </div>
       
 
-	<div class="container-fluid">
+	<div class="main-container portfolio-inner clearfix">
       <!-- box-intro -->
       <section class="box-intro">
       <div class="table-cell">
          <div class="tl_locationborder">
-            <button type="button" class="btn btn-default btn-xs">재탐색</button>
-            <button type="button" class="btn btn-default btn-xs"
-               data-toggle="modal" data-target="#myModal">수동수정</button>
+            <a type="button" class="btn btn-default btn-xs">재탐색</a>
+            <a type="button" class="btn btn-default btn-xs"
+               data-toggle="modal" data-target="#myModal">수동수정</a>
          </div>
          <div class="tl_locationborder">
          	<span id="jusoView" data-toggle="modal" data-target="#myModal">현재 위치를 찾고 있습니다.</span>
@@ -244,7 +246,7 @@
 	<div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
 	  <div data-role="navbar" >
 	   <ul>
-	    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+	    <li><a href="index.do" data-icon="home" >Home</a></li>
 	    <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
 	    <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
 	    <li><a href="list.do" data-icon="check" >Beacon</a></li>
@@ -258,7 +260,6 @@
    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
    <!-- end back to top -->
 
-</div>
 
 
 
@@ -281,10 +282,10 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"
+					<a type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
-					</button>
+					</a>
 					<h4 class="modal-title" id="myModalLabel">현재 위치 변경</h4>
 				</div>
 				<div class="modal-body">
@@ -292,9 +293,9 @@
 						<form class="form-inline" onsubmit="return false;">
 							<input type="text" class="form-control" id="keyword"
 								style="width: 50%" placeholder="검색어 입력">
-							<button class="btn btn-primary" id="searchButton">검색</button>
-							<button class="btn" id="zoomIn">줌인+</button>
-							<button class="btn" id="zoomOut">줌아웃-</button>
+							<a class="btn btn-primary" id="searchButton">검색</a>
+							<a class="btn" id="zoomIn">줌인+</a>
+							<a class="btn" id="zoomOut">줌아웃-</a>
 						</form>
 
 					</div>
@@ -309,9 +310,9 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" id="saveButton">Save
-						changes</button>
+					<a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+					<a type="button" class="btn btn-primary" id="saveButton">Save
+						changes</a>
 				</div>
 			</div>
 		</div>

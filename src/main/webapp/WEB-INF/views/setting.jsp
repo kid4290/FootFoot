@@ -10,7 +10,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    <link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,6 @@
     
 </head>
 <body>
-<div data-role="page">
 
  <div data-role="header" data-position="fixed" >
    <header class="box-header">
@@ -38,7 +37,9 @@
                 <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
             </a>
         </header>
+        </div>
         
+        <div class="content">
         <!-- nav -->
         <nav >
             <ul class="box-primary-nav">
@@ -58,9 +59,9 @@
             </ul>
         </nav>
         <!-- end nav -->
- </div>
- <div data-role="content">
+        </div>
  
+ <div class="main-container portfolio-inner clearfix">
  <!-- top bar -->
     <div class="top-bar">
         <h1>my photo</h1>
@@ -97,7 +98,7 @@
 <div data-role="footer" data-id="persistFooter" data-position="fixed" data-theme="c">
   <div data-role="navbar" >
    <ul>
-    <li><a href="index.do" data-icon="home" class="">Home</a></li>
+    <li><a href="index.do" data-icon="home" >Home</a></li>
     <li><a href="fileBoardDtoFormView.do" data-icon="star">Insert</a></li>
     <li><a href="myPlace.do" data-icon="search" >MyList</a></li>
     <li><a href="list.do" data-icon="check" >Beacon</a></li>
@@ -108,7 +109,6 @@
  
  
  <!-- div 종료 -->
- </div>
 
 <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
