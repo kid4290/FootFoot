@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum=scale=1.0,minimum-scale=1.0,user-scalable=no">
 <title>Header,Footer 고정</title>
-<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" /> -->
 <link href="css/jquery.mobile-1.3.1.min.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
@@ -56,9 +55,9 @@ text-align: center;
                  <li class="box-label">FootFoot</li>
 		         <li><a href="index.do">HOME</a></li>
 		         <li><a href="fileBoardDtoFormView.do">INSERT</a></li>
-		         <li><a href="myPlace.do">MYLIST</a><i class="ion-ios-circle-filled color"></i></li>
+		         <li><a href="myPlace.do">MYLIST</a></li>
 		         <li><a href="list.do">BEACON</a></li>
-		         <li><a href="setting.do">SETTING</a></li>
+		         <li><a href="setting.do">SETTING</a><i class="ion-ios-circle-filled color"></i></li>
 		         
                 <li class="box-label">Follow me</li>
 
