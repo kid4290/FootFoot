@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+`<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -7,14 +7,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+<script
+	src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 <title>Beacon List Page</title>
 <link rel="icon" href="img/circlelogo.png" type="image/x-icon">
 
@@ -32,7 +29,7 @@
 <script type="text/javascript">
 $(function(){
     $("#popbutton").click(function(){
-        $('div.modal').modal({remote : 'beacon.do?BId='+${dto.B_ID}});
+        $('div.modal').modal({remote : 'beaconList.jsp'});
     })
 })
 </script>
@@ -40,14 +37,6 @@ $(function(){
 </head>
 
 <body>
-
-<div class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-        <!-- remote ajax call이 되는영역 -->
-    </div>
-  </div>
-</div>
 
 	<div data-role="header" data-position="fixed">
 
@@ -107,8 +96,6 @@ $(function(){
 		<!-- end top bar -->
 
 
-
-
 		<div class="clearfix">
 
 			<!-- service-box -->
@@ -116,10 +103,7 @@ $(function(){
 				<i class="ion-android-favorite-outline size-50"></i>
 				<h3>BEACON LIST</h3>
 				<div class="h-10"></div>
-				
-		
-				
-				<table border="1" >
+				<table border="1" cellspacing="0">
 
 					<colgroup>
 						<col width="100">
@@ -137,8 +121,8 @@ $(function(){
 					<tbody>
 						<c:forEach var="dto" items="${list}">
 							<tr>
-								<td class="bSpotName"><a type="button" id="popbutton" >${dto.B_SPOTNAME}</a></td>
-								
+								<td class="bSpotName"><a href="beacon.do?BId=${dto.B_ID}"
+									data-target="#modal_test" type="button" data-toggle="modal">${dto.B_SPOTNAME}</a></td>
 								<td class="bLoaction"><a type="button" href="${dto.B_PAGE}">${dto.B_LOCACTION}</a></td>
 							</tr>
 						</c:forEach>
@@ -151,8 +135,6 @@ $(function(){
 
 		</div>
 	</div>
-	
-	
 
 
 	<!-- footer -->
@@ -189,7 +171,48 @@ $(function(){
 	<script src="js/custom.js"></script>
 
 
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <!-- remote ajax call이 되는영역 -->
+    </div>
+  </div>
+</div>
 
+	<div class="modal" id="modal_test">
+
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a type="button" class="close" data-dismiss="modal"
+						aria-hidden="true">&times;</a>
+					<h2 class="modal-title text-center fc-orange">${vo.bSpotName}</h2>
+				</div>
+				<div class="modal-body">
+					main-container
+					<div class="content">
+						<div class="col-md-3">
+							<h3 class="text-uppercase">대 제목</h3>
+							<h5>소 제목</h5>
+							<div class="h-30"></div>
+							<p>내용: ${vo}</p>
+							<div class="contact-info">
+								<p>
+									<i class="ion-android-call"></i> 010 9295 4920
+								</p>
+								<p>
+									<i class="ion-ios-email"></i> box@info.com
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
 
 </body>
 

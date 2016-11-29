@@ -37,7 +37,7 @@ public class BeaconController {
     @RequestMapping(value = "beacon.do")
     public ModelAndView getBeacon(String BId) {
         BeaconDto vo = beaconService.getBeacon(BId);
-        ModelAndView mv = new ModelAndView("redirect:/beacon.do");
+        ModelAndView mv = new ModelAndView("beacon/beaconDetail");
         mv.addObject("vo", vo);
         
         return mv;
